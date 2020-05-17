@@ -1,0 +1,37 @@
+Calculator Project:
+
+-We are not going to make the math equations: We will use the math library
+
+-We will make the project in N++
+
+-Click buttons in UI: Works like a scientific calc (TI-84)
+	-Syntactic analysis/ parsing
+
+
+UI
+- Div buttons, loose
+- CSS to organize
+
+
+Algorithm
+- every object has an evaluate() function
+-- "4 + 6 * 2" is 3 objects: (4, 6, sum)
+-- "3 * (1*5)" is 6 objects: mult(3, parenth( mult(1, 5) ) )
+-- sum's evaluate() returns 
+
+lexical parsing
+(https://en.wikipedia.org/wiki/Lexical_analysis)
+
+- skip whitespace
+- use regular expressions to find simple numbers, scientific notation as number nodes
+- parenthesis contains a single node
+regex list (https://regex101.com/): 
+- [0-9,e,.] = number
+- 
+
+[0-9,e,.]+
+81
+19
+eawsd
+listed
+6.5e3
