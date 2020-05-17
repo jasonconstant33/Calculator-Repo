@@ -1,1 +1,32 @@
 <!-- This is the HTML This document contains the UI elements for the app -->
+
+<html>
+<head>
+<title>Scientific Calculator</title>             <!-- This is the name of the tab, or window in a web browser -->
+<script	src="CalculatorProcessor.JS"></script>   <!-- loads the code to handle the processing -->
+<style	src="StylingSheet.css"></style>
+</head>
+
+
+<body>
+
+
+<div id="calculator-frame" >
+	Enter equation here:
+	<input	id="textbox"     type="text" /> <br />
+	<input	id="calc-button" type="button"
+			value="Calculate" onclick="Calculate()" />
+	<div	id="resultsbox" >Results here...</div>
+</div>
+
+<script>
+var input = document.getElementById("textbox");
+input.addEventListener("keyup", function(event) {
+  if (event.which == 13 || event.keyCode == 13) {
+	Calculate();
+  }
+});
+</script>
+
+</body>
+</html>
