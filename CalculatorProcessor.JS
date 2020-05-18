@@ -28,7 +28,7 @@ function LexicalAnalysis(str) {
 	// TODO: actually do the algorithm
 }
 
-
+/*
 class LexNode {
 	constructor(lhs, rhs) {
 		this.lhs = lhs;
@@ -61,4 +61,5 @@ class SumNode {
 		return lhs.Evaluate() + rhs.Evaluate();
 	}
 }
+*/
 
